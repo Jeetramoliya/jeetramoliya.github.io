@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>About - Myshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="icon" href="../images/bagicon.png" type="image/icon type">
+
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <span class="navbar-toggle" id="navbar-toggle-js">
+            <i class="material-icons responav" id="responav">toc</i> 
+        </span>
+        <a href="../index.html" class="logo"><img id="logoimg" src="../images/myshoplogo.png" alt="logo"></a>
+
+        <ul class="main-nav" id="menu-js">
+        <li ><a class="navoptions " href="../index.html">Home</a></li>
+        <li ><a class="navoptions" href="Products.html">Products</a></li>
+        <li ><a class="navoptions" href="Contact.html">Contact</a></li>
+        <li ><a class="navoptions activemenu" href="About.html">About Us</a></li>
+        <li ><a class="navoptions" href="Projects.html">Projects</a></li>
+        <li ><a class="navoptions" href="Login.html"><i class="material-icons loginicon">account_circle</i>
+        </a></li>
+        </div>
+        </ul>
+        <script>
+  
+            let mainNav = document.getElementById('menu-js');
+            let navBarToggle = document.getElementById('navbar-toggle-js');
+            
+            navBarToggle.addEventListener('click', function () {
+              mainNav.classList.toggle('active');
+            });
+            </script>
+    </nav>
+</body>
+</html>
