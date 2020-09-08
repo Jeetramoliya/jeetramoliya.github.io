@@ -1,0 +1,351 @@
+*{
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.login-form {
+    border: 3px black;
+    height: 320px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin-left: calc(22% - 50px);
+    border-radius: 10px;
+    box-shadow: rgb(120, 50, 170) 5px 5px 10px;
+    transition: 0.4s;
+  }
+  .login-form:hover {
+    box-shadow: rgb(120, 50, 170) -5px -5px 10px;
+  }
+  .login-form-items {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-right: 70px;
+    padding-top: 5px;
+  }
+  .container {
+    margin-top: calc(17% - 50px);
+    display: flex;
+    content: justify;
+    margin-right: 20px;
+  }
+  
+  .image {
+    height: 300px;
+    width: 400px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 3px;
+    box-shadow: rgb(120, 50, 170) -5px -5px 10px;
+    transition: 0.4s;
+  }
+  .image:hover {
+    box-shadow: rgb(120, 50, 170) 5px 5px 10px;
+  }
+  
+  .login-title {
+    margin-left: 60px;
+  }
+  
+  .inp-box {
+    margin-top: 8px;
+    height: 35px;
+    width: 190px;
+    text-align: start;
+    border-radius: 10px;
+    border: 1px solid #dbdbdb;
+    background-color: rgba(0, 0, 0,0.8);
+    outline: none;
+    padding-inline-start: 10px;
+    font-weight: 600;
+    transition: 0.2s;
+    color: white;    
+  }
+  ::placeholder{
+      color: rgba(255, 245, 238, 0.788);
+  }
+  .inp-box:hover{
+    font-size:15px;
+  }
+  .visibility {
+    user-select: none;
+    cursor: pointer;
+  }
+  .overlap-text {
+    position: relative;
+  }
+  
+  .overlap-text i {
+    position: absolute;
+    top: 16px;
+    right: 22px;
+    color: #ffffff93;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  #myBtn{
+      cursor: pointer;
+  }
+  #mybtn:hover{
+      border-bottom: 1px blue solid;
+  }
+  .submit-btn {
+    height: 30px;
+    width: 60px;
+    margin-left: 70px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(236, 116, 3);
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.2s;
+  }
+  
+  .submit-btn:hover,
+  .submit-btn:active {
+    background-color: rgb(255, 123, 0);
+    box-shadow: rgb(5, 5, 5) 2px 2px 5px;
+  }
+  
+  .register {
+    margin-top: 5px;
+  }
+  .register span {
+    color: blue;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0, 0, 0);  
+    background-color: rgba(0, 0, 0, 0.5); 
+    overflow: hidden;
+  }
+  
+
+  .modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: rgb(120, 50 , 170) 5px 5px 10px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animatetop;
+    animation-duration: 0.5s;
+    transition: 0.4s;
+  }
+  .modal-content:hover{
+    box-shadow: rgb(120, 50 , 170) -5px -5px 10px;
+
+  }
+  
+  @-webkit-keyframes animatetop {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes animatetop {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transform: rotateZ(180deg);
+    transition: 0.5s;
+  }
+  
+  .reg-inp-box {
+    margin-top: 8px;
+    height: 35px;
+    width: 230px;
+    text-align: start;
+    border-radius: 10px;
+    border: 1px solid #dbdbdb;
+    background-color: rgba(0, 0, 0,0.8);
+    outline: none;
+    padding-inline-start: 10px;
+    font-weight: 600;
+    user-select: none;
+    margin-left: 15%;
+    transition:0.2s;
+    color: white;
+  }
+  .reg-inp-box:hover{
+    font-size:15px;
+  }
+  #reg-show-pass-btn{
+      top: 16px;
+      right: 56px;
+  }
+  .reg-submit-btn {
+    height: 30px;
+    width: 60px;
+    margin-left: calc(50% - 30px);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(236, 116, 3);
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.2s;
+  }
+  .reg-submit-btn:hover,
+  .reg-submit-btn:active {
+    background-color: rgb(255, 123, 0);
+    box-shadow: rgb(5, 5, 5) 2px 2px 5px;
+  }
+  
+  .reg-title {
+    margin-left: 30%;
+  }
+
+#mainclosebtn{
+    position: absolute;
+    border-radius: 50%;
+    font-size: xx-large;
+    cursor: pointer;
+    right: 1%;
+    top: 1%;
+}
+#mainclosebtn:hover,#mainclosebtn:focus{
+    transition: 0.5s;
+    transform: rotateZ(180deg);
+}
+
+.logo{
+    position: absolute;
+    top: 0px;
+    left: calc( 50% - 95px );
+}
+#logoimg{
+    height: 140px;
+    width: 140px;
+}
+@media screen and (max-width: 648px) {
+
+    .image {
+      display: none;
+    }
+    .login-form {
+      margin-left: calc(50% - 150px);
+      margin-top: 150px;
+      width: 300px;
+    }
+    .register {
+      margin-left: -20px;
+    }
+    nav {
+      margin-left: 25%;
+    }
+    .modal-content {
+      width: 80%;
+      margin: 38% auto;
+    }
+    .reg-inp-box {
+      width: 75%;
+    }
+    #logoimg{
+      margin-left: 25px;
+    }
+  }
+
+  @media (min-width: 648px) {
+   .container{
+    margin-top: calc(28% - 50px);
+    margin-left: -50px;
+   }
+   .reg-inp-box{
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+@media (min-width: 915px) {
+    .container{
+     margin-top: calc(20% - 50px);
+     margin-left: -20px;
+    }
+    
+ }
+@media (min-width : 1024px){
+    .container{
+    margin-top: calc(17% - 50px);
+    margin-left: 0px;
+
+    
+    }
+}
+.material-icons{
+  font-size: 50px;
+
+}
