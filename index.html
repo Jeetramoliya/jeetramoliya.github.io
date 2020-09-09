@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
     <title>Myshop</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -19,23 +20,22 @@
             <i class="material-icons responav" id="responav">toc</i> 
         </span>
         <a href="index.html" class="logo"><img id="logoimg" src="images/myshoplogo.png" alt="logo"></a>
-
+        <div class="searchBox" >
+          <input class="searchInput"  type="text" name="" placeholder="Search"> 
+          <button class="searchButton" href="#">
+              <i class="material-icons">
+                  search
+              </i>
+          </button>
+      </div>
         <ul class="main-nav" id="menu-js">
           <li>
-            <div class="searchBox"  onload="searchbox()">
-                <input class="searchInput"  type="text" name="" placeholder="Search">
-                <button class="searchButton" href="#">
-                    <i class="material-icons">
-                        search
-                    </i>
-                </button>
-            </div>
-    </li>
+            
+          </li>
         <li ><a class="navoptions activemenu" href="index.html">Home</a></li>
         <li ><a class="navoptions" href="html/Products.html">Products</a></li>
         <li ><a class="navoptions" href="html/Contact.html">Contact</a></li>
         <li ><a class="navoptions" href="html/About.html">About Us</a></li>
-        <li ><a class="navoptions" href="html/Projects.html">Projects</a></li>
         <li ><a class="navoptions" href="html/Login.html"><i class="material-icons loginicon">account_circle</i>
         </a></li>
         </div>
@@ -52,33 +52,45 @@
             
             </script>
     </nav>
-   
+    <div class="poster">
+      <img src="images/poster.jpg" alt="">
+    </div>
+
     <div class="slideshow-container">
       <div class="mySlides fade">
-        <img class="slideshowimg" src="images/bluetoothearphone.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
+        <a href="html/Products.html#realme7"> <img class="slideshowimg" src="images/Products/ss1.jpg" style="width:100%"></a>
       </div>
       
       <div class="mySlides fade">
-        <img class="slideshowimg" src="images/earbuds.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
+        <img class="slideshowimg" src="images/Products/ss2.jpg" style="width:100%">
       </div>
       
       <div class="mySlides fade">
-        <img class="slideshowimg" src="images/googlehome.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
+        <img class="slideshowimg" src="images/Products/ss3.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slideshowimg" src="images/Products/ss4.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slideshowimg" src="images/Products/ss5.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slideshowimg" src="images/Products/ss6.jpg" style="width:100%">
       </div>
       
-      </div>
-      <br>
-      
-      <div class="dotclass" style="text-align:center">
+    </div>
+    <div class="dotclass" style="text-align:center">
         <span class="dot"></span> 
         <span class="dot"></span> 
         <span class="dot"></span> 
-      </div>
-      
-      <script>
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+    <script>
       var slideIndex = 0;
       showSlides();
       
@@ -92,14 +104,16 @@
         slideIndex++;
         if (slideIndex > slides.length) {slideIndex = 1}    
         for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
+          dots[i].className = dots[i].className.replace(" activedot", "");
         }
         slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        dots[slideIndex-1].className += " activedot";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
       }
-      </script>
+    </script>
       
+
+
     
 </body>
 
