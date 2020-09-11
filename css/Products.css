@@ -1,0 +1,493 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 80px ;
+  margin-top: 2.5%;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 430px ;
+  margin-top: -13.2%;
+  text-align: center;
+  font-family: arial;
+}
+.card1 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card1 button:hover {
+  opacity: 0.7;
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 780px ;
+  margin-top: -13.1%;
+  text-align: center;
+  font-family: arial;
+}
+.card2 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card2 button:hover {
+  opacity: 0.7;
+}
+
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 1130px ;
+  margin-top: -13.1%;
+  text-align: center;
+  font-family: arial;
+}
+.card3 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card3 button:hover {
+  opacity: 0.7;
+}
+
+.card4 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 80px ;
+  margin-top: 15%;
+  text-align: center;
+  font-family: arial;
+}
+.card4 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card4 button:hover {
+  opacity: 0.7;
+}
+
+.card5 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 430px ;
+  margin-top: -13.2%;
+  text-align: center;
+  font-family: arial;
+}
+.card5 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card5 button:hover {
+  opacity: 0.7;
+}
+
+.card6 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 780px ;
+  margin-top: -13.2%;
+  text-align: center;
+  font-family: arial;
+}
+.card6 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card6 button:hover {
+  opacity: 0.7;
+}
+
+.card7 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 1130px ;
+  margin-top: -13.2%;
+  text-align: center;
+  font-family: arial;
+}
+.card7 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card7 button:hover {
+  opacity: 0.7;
+}
+
+.card8 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 80px ;
+  margin-top: 15%;
+  text-align: center;
+  font-family: arial;
+}
+.card8 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card8 button:hover {
+  opacity: 0.7;
+}
+
+.card9 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 430px ;
+  margin-top: -13.2%;
+  text-align: center;
+  font-family: arial;
+}
+.card9 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card9 button:hover {
+  opacity: 0.7;
+}
+
+.card10 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 780px ;
+  margin-top: -13.2%;
+  text-align: center;
+  font-family: arial;
+}
+.card10 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card10 button:hover {
+  opacity: 0.7;
+}
+
+.card11 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 1130px ;
+  margin-top: -13.2%;
+  text-align: center;
+  font-family: arial;
+}
+.card11 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card11 button:hover {
+  opacity: 0.7;
+}
+
+.card12 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 80px ;
+  margin-top: 15%;
+  text-align: center;
+  font-family: arial;
+}
+.card12 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card12 button:hover {
+  opacity: 0.7;
+}
+
+.card13 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 430px ;
+  margin-top: -13.2%;
+  text-align: center;
+  font-family: arial;
+}
+.card13 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card13 button:hover {
+  opacity: 0.7;
+}
+
+.card14 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 780px ;
+  margin-top: -13.2%;
+  text-align: center;
+  font-family: arial;
+}
+.card14 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card14 button:hover {
+  opacity: 0.7;
+}
+
+.card15 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 1130px ;
+  margin-top: -13.2%;
+  text-align: center;
+  font-family: arial;
+}
+.card15 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card15 button:hover {
+  opacity: 0.7;
+}
+
+.card16 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 80px ;
+  margin-top: 15%;
+  text-align: center;
+  font-family: arial;
+}
+.card16 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card16 button:hover {
+  opacity: 0.7;
+}
+
+.card17 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 430px ;
+  margin-top: -13.2%;
+  text-align: center;
+  font-family: arial;
+}
+.card17 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card17 button:hover {
+  opacity: 0.7;
+}
+
+.card18 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 780px ;
+  margin-top: -13.2%;
+  text-align: center;
+  font-family: arial;
+}
+.card18 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card18 button:hover {
+  opacity: 0.7;
+}
+
+.card19 {
+  box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 3.2);
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 1130px ;
+  margin-top: -13.2%;
+  text-align: center;
+  font-family: arial;
+}
+.card19 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card19 button:hover {
+  opacity: 0.7;
+}
+
+#realme7{
+  background-color: yellow;
+  height: 200px;
+  width: 400px;
+  margin-left: calc( 50% - 200px ) ;
+  margin-top: 100%;
+}
