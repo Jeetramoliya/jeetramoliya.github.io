@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/Contact.css">
+    <title>Contect us - Myshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="icon" href="../images/bagicon.png" type="image/icon type">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <span class="navbar-toggle" id="navbar-toggle-js">
+            <i class="material-icons responav" id="responav">toc</i> 
+        </span>
+        <a href="../index.html" class="logo"><img id="logoimg" src="../images/myshoplogo.png" alt="logo"></a>
+
+        <ul class="main-nav" id="menu-js">
+        <li ><a class="navoptions " href="../index.html">Home</a></li>
+        <li ><a class="navoptions" href="Products.html">Products</a></li>
+        <li ><a class="navoptions activemenu" href="Contact.html">Contact</a></li>
+        <li ><a class="navoptions" href="About.html">About Us</a></li>
+        <li ><a class="navoptions" href="Login.html"><i class="material-icons loginicon">account_circle</i>
+        </a></li>
+        </div>
+        </ul>
+        <script>
+  
+            let mainNav = document.getElementById('menu-js');
+            let navBarToggle = document.getElementById('navbar-toggle-js');
+            
+            navBarToggle.addEventListener('click', function () {
+              mainNav.classList.toggle('active');
+            });
+            </script>
+    </nav>
+
+    <section id="contact">
+        <!--socail----------->
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>		
+        </div>
+
+        <!--contact-box------------->
+        <div class="contact-box">
+        <!--heading---------->
+            <div class="c-heading">
+                <h1>Get In Touch</h1>
+                <p> Email Us Regarding Question Or Issues</p>
+            </div>
+        <!--inputs------------------>
+            <div class="c-inputs">
+            <form>
+                <input type="text" required placeholder="Full Name"/>	
+                <input type="email" required placeholder="Example@gmail.com"/>
+                <textarea name="message" placeholder="Write Message"></textarea>
+        <!--sumbit-btn----------->
+                <button>SEND</button>
+            </form>
+            </div>
+            
+        </div>
+        <!--map------------------->
+        <div class="map">
+            <div class="loader" id="loader">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <iframe onload="loading()" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.090456530584!2d73.13103941488413!3d21.069049085976552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be060e07393bc51%3A0xf96e044991e337e9!2sUka%20Tarsadia%20University!5e0!3m2!1sen!2sin!4v1599655743723!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <script>
+                var loader = document.getElementById("loader");
+                function loading(){
+                    loader.style.display= 'none';
+                }
+            </script>
+        </div>
+        </section>
+
+</body>
+</html>

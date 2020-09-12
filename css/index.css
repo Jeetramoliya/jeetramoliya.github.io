@@ -1,0 +1,192 @@
+body{
+  user-select: none;
+  background-color: rgb(220, 220, 220);
+}
+/* container */
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  margin-top: 5px;
+  max-width: 1680px;
+  width: 100%;
+  height: 270px;
+  position: relative;
+}
+
+.dotclass{
+  height: 2px;
+  z-index: 1111;
+  margin-top: 5px;
+  user-select: none;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(170, 170, 170);
+  display: inline-block;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.activedot {
+  background-color: #000000;
+}
+
+.slideshowimg{
+  width:100%;
+  position: relative;
+  height: 270px;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* ------------------------poster animation---------------------------------- */
+.poster-row{
+  margin-top:5px ;
+  width: 100%;
+  height: 100vh;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 30%, #8b05ee 99%);
+  display: flex;
+  height: 100%;
+}
+.col-2{
+  min-width: 300px;
+  flex-basis: 50%;
+}
+.col-2 img{
+  height: 100%;
+  width: 100%;
+}
+.col-2 h1{
+  position: relative ;
+  color: white;
+  font-size: xx-large;
+  top: 40%;
+  left: 50%;
+  transform: translate(-38%,-35%);
+  justify-content: center;
+}
+
+.col-2 h1 span{
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+.col-2 h1 span:hover{
+  color: orange;
+}
+.col-2 p{
+  position: relative ;
+  color: white;
+  font-size: medium;
+  font-family: sans-serif;
+  font-weight: 400;
+  top: 40%;
+  left: 50%;
+  transform: translate(-38%,-35%);
+  justify-content: center;
+}
+#explore{
+  display: inline-block;
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 40vh;
+  margin-left: 18%;
+  padding: 8px 30px;
+  background-color: rgb(255, 123, 0);
+  text-decoration: none;
+  border-radius: 30px;
+  transition:  0.3s;
+}
+#explore:hover{
+  box-shadow: black 0px 0px 5px;
+}
+#explore:active{
+  background-color: rgb(185, 90, 2) ;
+}
+
+@media only screen and (max-width: 530px) {
+.col-2 img{
+  display: none;
+}
+.poster-row{
+  height: 100vh;
+}
+}
+
+.featuring{
+  margin-top: 15px;
+  display: flex;
+  width: 95%;
+  height: 250px;
+  margin-left: 2.5%;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.featuring h3{
+  position: relative;
+  margin-left: 1rem;
+  font-size: 25px;
+  display: block;
+  margin-top: 2px;
+  color: rgb(120, 120, 120);
+}
+
+.asklogin{
+  margin-top: 15px;
+  display: inline-block;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+}
+.asklogin h4{
+  display: block;
+  text-align: center;
+  font-weight: 100 !important;
+  margin-top: 5px;
+}
+.asklogin button{
+  display: block;
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  margin-left: calc(50% - 37.5px);
+  height: 35px;
+  width: 75px;
+  background-color: rgb(255, 123, 0);
+  text-decoration: none;
+  border-radius: 5px;
+  transition:  0.3s;
+  margin-top: 5px;
+  outline: none;
+}
+.asklogin button:hover{
+  box-shadow: black 0px 0px 5px;
+}
+.asklogin button:active{
+  background-color: rgb(185, 90, 2) ;
+}
+

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/Products.css">
+    <title>Products - Myshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="../images/bagicon.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .zoom {
+            padding: ;
+            transition: transform .2s;
+            /* Animation */
+            width: 300px;
+            height: 250px;
+            margin: 0 auto;
+        }
+        
+        .zoom:hover {
+            transform: scale(1.3);
+            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+    </style>
+
+    <style>
+        html {
+            height: 100%;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .bg {
+            animation: slide 3s ease-in-out infinite alternate;
+            background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+            bottom: 0;
+            left: -50%;
+            opacity: .5;
+            position: fixed;
+            right: -50%;
+            top: 0;
+            z-index: -1;
+        }
+        
+        .bg2 {
+            animation-direction: alternate-reverse;
+            animation-duration: 4s;
+        }
+        
+        .bg3 {
+            animation-duration: 5s;
+        }
+        
+        @keyframes slide {
+            0% {
+                transform: translateX(-25%);
+            }
+            100% {
+                transform: translateX(25%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <span class="navbar-toggle" id="navbar-toggle-js">
+            <i class="material-icons responav" id="responav">toc</i> 
+        </span>
+        <a href="../index.html" class="logo"><img id="logoimg" src="../images/myshoplogo.png" alt="logo"></a>
+        <div class="searchBox" onload="searchbox()">
+            <input class="searchInput" type="text" name="" placeholder="Search">
+            <button class="searchButton" href="#">
+                <i class="material-icons">
+                    search
+                </i>
+            </button>
+        </div>
+        <ul class="main-nav" id="menu-js">
+
+            <li><a class="navoptions " href="../index.html">Home</a></li>
+            <li><a class="navoptions activemenu" href="Products.html">Products</a></li>
+            <li><a class="navoptions" href="Contact.html">Contact</a></li>
+            <li><a class="navoptions" href="About.html">About Us</a></li>
+            <li><a class="navoptions" href="Login.html"><i class="material-icons loginicon">account_circle</i>
+        </a></li>
+            </div>
+        </ul>
+        <script>
+            let mainNav = document.getElementById('menu-js');
+            let navBarToggle = document.getElementById('navbar-toggle-js');
+
+            navBarToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+            });
+        </script>
+    </nav>
+    <hr>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <br/>
+
+    <div class="featuring">
+        <h3>Deals of the day</h3>
+    </div>
+
+    <div class="card">
+        <div class="zoom">
+            <img src="../images/earbuds.jpg" alt="Earbuds" style="width:100%">
+        </div>
+        <h1>Earbuds</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card1">
+        <div class="zoom">
+            <img src="../images/headphone1.jpg" alt="headphone" style="width:100%">
+        </div>
+        <h1>headphone</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card2">
+        <div class="zoom">
+            <img src="../images/airpods.jpg" alt="airpods" style="width:100%">
+        </div>
+        <h1>airpods</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card3">
+        <div class="zoom">
+            <img src="../images/bigspeaker.jpg" alt="speaker" style="width:100%">
+        </div>
+        <h1>speaker</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card4">
+        <div class="zoom">
+            <img src="../images/googlehome.jpg" alt="googlehome" style="width:100%">
+        </div>
+        <h1>Googlehome</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card5">
+        <div class="zoom">
+            <img src="../images/smallspeaker.jpg" alt="smallspeaker" style="width:100%">
+        </div>
+        <h1>Smallspeaker</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card6">
+        <div class="zoom">
+            <img src="../images/googlehome.jpg" alt="googlehome" style="width:100%">
+        </div>
+        <h1>Googlehome</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card7">
+        <div class="zoom">
+            <img src="../images/smallspeaker.jpg" alt="smallspeaker" style="width:100%">
+        </div>
+        <h1>Smallspeaker</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card8">
+        <div class="zoom">
+            <img src="../images/googlehome.jpg" alt="googlehome" style="width:100%">
+        </div>
+        <h1>Googlehome</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card9">
+        <div class="zoom">
+            <img src="../images/smallspeaker.jpg" alt="smallspeaker" style="width:100%">
+        </div>
+        <h1>Smallspeaker</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card10">
+        <div class="zoom">
+            <img src="../images/googlehome.jpg" alt="googlehome" style="width:100%">
+        </div>
+        <h1>Googlehome</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card11">
+        <div class="zoom">
+            <img src="../images/smallspeaker.jpg" alt="smallspeaker" style="width:100%">
+        </div>
+        <h1>Smallspeaker</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card12">
+        <div class="zoom">
+            <img src="../images/earbuds.jpg" alt="Earbuds" style="width:100%">
+        </div>
+        <h1>Earbuds</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card13">
+        <div class="zoom">
+            <img src="../images/headphone1.jpg" alt="headphone" style="width:100%">
+        </div>
+        <h1>headphone</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card14">
+        <div class="zoom">
+            <img src="../images/airpods.jpg" alt="airpods" style="width:100%">
+        </div>
+        <h1>airpods</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card15">
+        <div class="zoom">
+            <img src="../images/bigspeaker.jpg" alt="speaker" style="width:100%">
+        </div>
+        <h1>speaker</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card16">
+        <div class="zoom">
+            <img src="../images/googlehome.jpg" alt="googlehome" style="width:100%">
+        </div>
+        <h1>Googlehome</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card17">
+        <div class="zoom">
+            <img src="../images/smallspeaker.jpg" alt="smallspeaker" style="width:100%">
+        </div>
+        <h1>Smallspeaker</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card18">
+        <div class="zoom">
+            <img src="../images/googlehome.jpg" alt="googlehome" style="width:100%">
+        </div>
+        <h1>Googlehome</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+
+    <div class="card19">
+        <div class="zoom">
+            <img src="../images/smallspeaker.jpg" alt="smallspeaker" style="width:100%">
+        </div>
+        <h1>Smallspeaker</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+    <br/>
+
+    <div class="card20">
+    </div>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <img src="../images/myshoplogo.png" alt="logo">
+
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Home</a>
+
+
+                <a href="html/Products.html">Pricing</a>
+
+                <a href="html/About.html">About</a>
+
+                <a href="html/Contact.html">Faq</a>
+
+                <a href="html/Contact.html">Contact</a>
+            </p>
+
+            <p class="footer-company-name">One Tap ©2020</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Uka Tarsadiya University</span>Bardoli, Gujrat</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 7069384384</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:jaygangani1212@gmail.com">onetap@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span> In here at one tap, we all computer engineers decided to make your life easier in buying things. For making your life ease you can buy anything by just one tap. Our main motto is to make your life easy going
+                while buying anything.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.github.com"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

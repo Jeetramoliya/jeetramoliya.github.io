@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Myshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="icon" href="../images/bagicon.png" type="image/icon type">
+    <link rel="stylesheet" href="../css/login.css">
+
+
+</head>
+<body>
+  <i class="material-icons" id="mainclosebtn" onclick="canclelogin()">clear</i> 
+  <div class="login">
+    <div class="login-box">
+      <a href="../index.html"><img id="logoimg" src="../images/myshoplogo.png" alt="logo"></a>
+      
+      <h1 class="login-title">Login</h1>
+        <form action="../index.html" autocomplete="off" method="">
+          <i class="material-icons uname-icon">perm_identity</i> 
+          <input type="text" placeholder="Username" class="inp-box" name="loginusername" /><br />
+          <i class="material-icons pass-icon">fingerprint</i> 
+          <div class="overlap-text">
+
+            <input type="password" placeholder="Password" id="password" class="inp-box" name="loginpassword" />
+            <i class="material-icons visibility" onclick="showpass()" id="show-pass-btn">visibility_off</i>
+          </div>
+          <br/>
+          <input type="submit" class="submit-btn" value="Submit" /><br />
+          <p class="register">Don't have an account? <span id="myBtn">Sign Up</span></p>
+          <p class="register">forgot password? <span id="forgotpass">Click here</span></p>
+
+        </form>
+    </div>
+  </div>
+  
+  <!-- for back-ground effect  -->
+    <div class="area" >
+      <ul class="circles">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+      </ul>
+    </div >
+    
+  <!-- The Modal for registration-->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content" id="register">
+      <span class="close">&times;</span>
+      <h1 class="reg-title">Register</h1>
+      <form action="../index.html" autocomplete="off" method="">
+        <input type="text" placeholder="First Name" class="reg-inp-box" name="fname" title="First Name" required/><br />
+        <input type="text" placeholder="Last Name" class="reg-inp-box" name="lname" title="Last Name" required/><br />
+        <input type="text" placeholder="User Name" class="reg-inp-box" name="signupusername" title="User Name"  required/><br />
+        <input type="email" placeholder="Email Address" class="reg-inp-box" name="emailid"   title="Email" required/><br />
+        <div class="overlap-text">
+          <input type="password" placeholder="Password" class="reg-inp-box " name="pass1" title="Password" id="pass1" required/>
+          <i class="material-icons visibility" onclick="regshowpass()" id="reg-show-pass-btn">visibility_off</i> <br>
+          <input type="password" placeholder="Confirm Password" class="reg-inp-box " title="Confirm Password" name="pass2" id="pass2" required/>
+        </div>
+        <br />
+        <input type="submit" class="reg-submit-btn" value="Submit" /><br />
+      </form>
+    </div>
+    <script src="../script/login.js"></script>
+
+  
+    
+      
+
+
+
+
+</body>
+</html>

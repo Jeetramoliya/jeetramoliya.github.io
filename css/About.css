@@ -1,0 +1,60 @@
+
+.about-section{
+    background: url("../images/aboutbackground.jpg") no-repeat left;
+    background-size: 70%;
+    background-color:rgba(255, 255, 255, 0.637);
+    overflow: hidden;
+    padding: 100px 0;
+    left: 100px;
+}
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: whitesmoke;
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 15px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 120px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 10px;
+    }
+    .inner-container{
+        padding: 0px;
+    }
+}

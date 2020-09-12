@@ -1,0 +1,453 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+.navbar{
+  position: sticky;
+  background-color: rgb(255, 255, 255);
+}
+.main-nav {
+  list-style-type: none;
+  display: none;
+  border-bottom: rgba(0, 0, 0, 0.2) solid 1px;
+  margin-top: -12px;
+}
+#logoimg {
+  height: 70px;
+  width: auto;
+  margin-left: 20%;
+  user-select: none;
+}
+.main-nav li {
+  text-align: right;
+  margin: 10px auto;
+  margin-right: 21px;
+  font-size: 25px;
+
+}
+.logo{
+  display: inline-block;
+  margin-left: 10px ;
+}
+.navbar-toggle {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: bolder;
+  user-select: none;
+}
+.navoptions {
+  padding: 5px 5px 3px 5px;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: 550;
+  user-select: none;
+}
+.navoptions:active{
+  color: rgba(0, 0, 0, 0.75);
+}
+.active {
+  z-index: 9999;
+  display: block;
+}
+.navoptions::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.navoptions:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+  font-weight: bolder;
+}
+.navoptions:hover{
+    font-weight: bolder;
+}
+.activemenu {
+  font-weight: bolder;
+}
+/* for desktop */
+@media screen and (min-width: 640px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+}
+.main-nav {
+  display: flex;
+  margin-right: 30px;
+  flex-direction: row;
+  justify-content: flex-end;
+  border: none;
+  width: auto;
+  margin-top: 0px;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.nav-links {
+  margin-left: 40px;
+}
+
+.logo {
+  margin-top: 0;
+}
+
+.navbar-toggle {
+  display: none;
+}    
+}
+.responav{
+  font-size: 50px !important;
+}
+.loginicon{
+  font-size: 35px !important;
+}
+.searchBox {
+  background: rgb(255, 255, 255);
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.514);
+  transition: 0.4s;
+  color: black;
+  box-shadow: black 2px 2px 5px;
+
+
+}
+.searchBox:hover{
+  background-color: #8b05ee;
+
+}
+.searchBox:hover > .searchInput{
+  color: white;
+}
+.searchBox:hover > .searchButton {
+background: black;
+color : white;
+}
+.searchButton {
+  outline: 0px;
+  color:black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  margin-left: 255px;
+}
+.searchInput {  
+  border: none;
+  background: none;
+  outline:none;
+  float:left;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  font-weight: bold;
+  text-indent: 10px;
+  width: 80%;
+}
+
+.searchInput::placeholder{
+  color: rgb(218, 218, 218);
+  text-indent: 10px;
+}
+@media screen and (max-width: 620px) {
+  .searchBox{
+    margin-left: 27%;
+    width: 50%;
+    margin-top: -50px;
+  }
+  .searchButton{
+    top: -100%;
+    margin-left: 80%;
+    position: relative;
+  }
+
+}
+
+/* container */
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1680px;
+  width: 100%;
+  height: 270px;
+  position: relative;
+}
+
+
+.dotclass{
+  height: 2px;
+  z-index: 1111;
+  margin-top: 5px;
+  user-select: none;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(170, 170, 170);
+  display: inline-block;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.activedot {
+  background-color: #000000;
+}
+
+.slideshowimg{
+  width:100%;
+  position: relative;
+  height: 270px;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {
+    left: 100%;
+  } 
+  to {left: 0%;}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+ /* ------------------footer--------------------- */
+ .footer-distributed{
+   margin-top: 10px;
+	background: #4b4b4b;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 20px 20px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  rgb(179, 179, 179);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  margin-top: 5%;
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+.footer-left img{
+  width: 150px;
+  height: 150px;
+}
+.footer-right .footer-icons .fa-facebook:hover{
+  color: rgb(0, 67, 250);
+	transition: all ease 0.3s;
+}
+.footer-right .footer-icons .fa-twitter:hover{
+  color: rgb(0, 200, 250);
+	transition: all ease 0.3s;
+}
+.footer-right .footer-icons .fa-instagram:hover{
+  color: rgb(250, 112, 0);
+	transition: all ease 0.3s;
+}
+.footer-right .footer-icons .fa-github:hover{
+  color: rgb(0, 0, 0);
+	transition: all ease 0.3s;
+}
