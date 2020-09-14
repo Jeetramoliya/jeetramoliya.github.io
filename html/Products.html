@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <title>Products - Myshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="../images/bagicon.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Site css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <!--
+        <style>
+        .zoom {
+            padding: ;
+            transition: transform .2s;
+            /* Animation */
+            width: 300px;
+            height: 250px;
+            margin: 0 auto;
+        }
+        
+        .zoom:hover {
+            transform: scale(1.3);
+            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+    </style>
+-->
+    <style>
+        html {
+            height: 100%;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .bg {
+            animation: slide 3s ease-in-out infinite alternate;
+            background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+            bottom: 0;
+            left: -50%;
+            opacity: .5;
+            position: fixed;
+            right: -50%;
+            top: 0;
+            z-index: -1;
+        }
+        
+        .bg2 {
+            animation-direction: alternate-reverse;
+            animation-duration: 4s;
+        }
+        
+        .bg3 {
+            animation-duration: 5s;
+        }
+        
+        @keyframes slide {
+            0% {
+                transform: translateX(-25%);
+            }
+            100% {
+                transform: translateX(25%);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <span class="navbar-toggle" id="navbar-toggle-js">
+            <i class="material-icons responav" id="responav">toc</i> 
+        </span>
+        <a href="../index.html" class="logo"><img id="logoimg" src="../images/myshoplogo.png" alt="logo"></a>
+        <div class="searchBox" onload="searchbox()">
+            <input class="searchInput" type="text" name="" placeholder="Search">
+            <button class="searchButton" href="#">
+                <i class="material-icons">
+                    search
+                </i>
+            </button>
+        </div>
+        <ul class="main-nav" id="menu-js">
+
+            <li><a class="navoptions " href="../index.html">Home</a></li>
+            <li><a class="navoptions activemenu" href="Products.html">Products</a></li>
+            <li><a class="navoptions" href="Contact.html">Contact</a></li>
+            <li><a class="navoptions" href="About.html">About Us</a></li>
+            <li><a class="navoptions" href="Login.html"><i class="material-icons loginicon">account_circle</i>
+        </a></li>
+            </div>
+        </ul>
+        <script>
+            let mainNav = document.getElementById('menu-js');
+            let navBarToggle = document.getElementById('navbar-toggle-js');
+
+            navBarToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+            });
+        </script>
+    </nav>
+    <hr>
+    <br/>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <br/>
+    <!--
+    <div class="card">
+        <div class="zoom">
+            <img src="../images/earbuds.jpg" alt="Earbuds" style="width:100%">
+        </div>
+        <h1>Earbuds</h1>
+        <p class="price">$19.99</p>
+        <p>..</p>
+        <p><button>Buy</button></p>
+    </div>
+-->
+
+    <div class="section padding_layout_1 product_list_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12 margin_bottom_30_all">
+                            <div class="product_list">
+                                <div class="product_img"> <img class="img-responsive" src="../images/Products/laptops/asus.jpg" alt="" style="height: -12%;"> </div>
+                                <div class="product_detail_btm">
+                                    <div class="center">
+                                        <h4><a href="#">Asus Laptop</a></h4>
+                                    </div>
+                                    <div class="starratin">
+                                        <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>                                            </div>
+                                    </div>
+                                    <div class="product_price">
+                                        <p><span class="old_price">$215.00</span> – <span class="new_price">$214.99</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 margin_bottom_30_all">
+                            <div class="product_list">
+                                <div class="product_img"> <img class="img-responsive" src="../images/Products/laptops/avita.jpg" alt="" style="height: -12%"> </div>
+                                <div class="product_detail_btm">
+                                    <div class="center">
+                                        <h4><a href="#">Dell Laptop</a></h4>
+                                    </div>
+                                    <div class="starratin">
+                                        <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>                                            </div>
+                                    </div>
+                                    <div class="product_price">
+                                        <p><span class="old_price">$200.99</span><span class="new_price"> $199.99</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 margin_bottom_30_all">
+                            <div class="product_list">
+                                <div class="product_img"> <img class="img-responsive" src="../images/Products/laptops/hp.jpg" alt="" style="height: -12%"> </div>
+                                <div class="product_detail_btm">
+                                    <div class="center">
+                                        <h4><a href="#">HP Laptop</a></h4>
+                                    </div>
+                                    <div class="starratin">
+                                        <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>                                            </div>
+                                    </div>
+                                    <div class="product_price">
+                                        <p><span class="old_price">$300</span><span class="new_price"> $299.99</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 margin_bottom_30_all">
+                            <div class="product_list">
+                                <div class="product_img">
+                                    <img class="img-responsive" src="../images/Products/menscloth/t-shirts449.jpg" " alt=" " style="height: -12% "> </div>
+                                <div class="product_detail_btm ">
+                                    <div class="center ">
+                                        <h4><a href="# "> T-shirt </a></h4>
+                                    </div>
+                                    <div class="starratin ">
+                                        <div class="center "> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true
+                                        "></i> <i class="fa fa-star-o " aria-hidden="true "></i>                                            </div>
+                                    </div>
+                                    <div class="product_price ">
+                                        <p><span class="old_price ">$15.00</span> – <span class="new_price ">$10.50</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 margin_bottom_30_all ">
+                            <div class="product_list ">
+                                <div class="product_img ">
+                                    <img class="img-responsive " src="../images/Products/menscloth/t-shirts499.jpg " " alt=" " style="height: -12% "> </div>
+                                <div class="product_detail_btm ">
+                                    <div class="center ">
+                                        <h4><a href="#"> T-shirt </a></h4>
+                                    </div>
+                                    <div class="starratin ">
+                                        <div class="center "> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true
+                                        "></i> <i class="fa fa-star-o " aria-hidden="true "></i> </div>
+                                    </div>
+                                    <div class="product_price ">
+                                        <p><span class="old_price ">$50.00</span> – <span class="new_price ">$25.50</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 margin_bottom_30_all">
+                            <div class="product_list">
+                                <div class="product_img">
+                                    <img class="img-responsive" src="../images/Products/menscloth/t-shirts695.jpg" " alt=" " style="height: -12% "> </div>
+                                <div class="product_detail_btm ">
+                                    <div class="center ">
+                                        <h4><a href="# "> T-shirt </a></h4>
+                                    </div>
+                                    <div class="starratin ">
+                                        <div class="center "> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true
+                                        "></i> <i class="fa fa-star-o " aria-hidden="true "></i>                                            </div>
+                                    </div>
+                                    <div class="product_price ">
+                                        <p><span class="old_price ">$30</span> – <span class="new_price ">$25.50</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 margin_bottom_30_all ">
+                            <div class="product_list ">
+                                <div class="product_img "> <img class="img-responsive " src="../images/Products/headphons/panasonic.jpg " alt=" " style="height: -12% "> </div>
+                                <div class="product_detail_btm ">
+                                    <div class="center ">
+                                        <h4><a href="# "> Panasonic Headphone </a></h4>
+                                    </div>
+                                    <div class="starratin ">
+                                        <div class="center "> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true
+                                        "></i> <i class="fa fa-star-o " aria-hidden="true "></i>                                            </div>
+                                    </div>
+                                    <div class="product_price ">
+                                        <p><span class="old_price ">$24.99</span><span class="new_price "> $18.49</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 margin_bottom_30_all ">
+                            <div class="product_list ">
+                                <div class="product_img "> <img class="img-responsive " src="../images/Products/headphons/philips.jpg " alt=" " style="height: -12% "> </div>
+                                <div class="product_detail_btm ">
+                                    <div class="center ">
+                                        <h4><a href="# ">Philips Headphone</a></h4>
+                                    </div>
+                                    <div class="starratin ">
+                                        <div class="center "> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true
+                                        "></i> <i class="fa fa-star-o " aria-hidden="true "></i>                                            </div>
+                                    </div>
+                                    <div class="product_price ">
+                                        <p><span class="old_price ">$24.99</span><span class="new_price "> $12.49</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 margin_bottom_30_all ">
+                            <div class="product_list ">
+                                <div class="product_img "> <img class="img-responsive " src="../images/Products/headphons/skull.jpg " alt=" " style="height: -12% "> </div>
+                                <div class="product_detail_btm ">
+                                    <div class="center ">
+                                        <h4><a href="# ">Skull candy Headphone</a></h4>
+                                    </div>
+                                    <div class="starratin ">
+                                        <div class="center "> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true
+                                        "></i> <i class="fa fa-star-o " aria-hidden="true "></i>                                            </div>
+                                    </div>
+                                    <div class="product_price ">
+                                        <p><span class="old_price ">$20.00</span> – <span class="new_price ">$35.00</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 margin_bottom_30_all ">
+                            <div class="product_list ">
+                                <div class="product_img "> <img class="img-responsive " src="../images/Products/mobile/samsung.webp " alt=" " style="height: -12% "> </div>
+                                <div class="product_detail_btm ">
+                                    <div class="center ">
+                                        <h4><a href="# ">Samsung</a></h4>
+                                    </div>
+                                    <div class="starratin ">
+                                        <div class="center "> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true
+                                        "></i> <i class="fa fa-star-o " aria-hidden="true "></i>                                            </div>
+                                    </div>
+                                    <div class="product_price ">
+                                        <p><span class="old_price ">$95.00</span> – <span class="new_price ">$105.10</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 margin_bottom_30_all ">
+                            <div class="product_list ">
+                                <div class="product_img "> <img class="img-responsive " src="../images/Products/mobile/oppo.webp " alt=" "> </div>
+                                <div class="product_detail_btm ">
+                                    <div class="center ">
+                                        <h4><a href="# ">Oppo</a></h4>
+                                    </div>
+                                    <div class="starratin ">
+                                        <div class="center "> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true
+                                        "></i> <i class="fa fa-star-o " aria-hidden="true "></i>                                            </div>
+                                    </div>
+                                    <div class="product_price ">
+                                        <p><span class="old_price ">$75.00</span> – <span class="new_price ">$55.00</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 margin_bottom_30_all ">
+                            <div class="product_list ">
+                                <div class="product_img "> <img class="img-responsive " src="../images/Products/mobile/one plus.webp " alt=" " style="height: -12% "> </div>
+                                <div class="product_detail_btm ">
+                                    <div class="center ">
+                                        <h4><a href="# "> One Plus</a></h4>
+                                    </div>
+                                    <div class="starratin ">
+                                        <div class="center "> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true
+                                        "></i> <i class="fa fa-star-o " aria-hidden="true "></i>                                            </div>
+                                    </div>
+                                    <div class="product_price ">
+                                        <p><span class="old_price ">$99.99</span><span class="new_price "> $90.49</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12 margin_bottom_30_all ">
+                            <div class="product_list ">
+                                <div class="product_img "> <img class="img-responsive " src="../images/Products/shirts/arrow.jpg " alt=" " style="height: -12% "> </div>
+                                <div class="product_detail_btm ">
+                                    <div class="center ">
+                                        <h4><a href="# ">Arrow</a></h4>
+                                    </div>
+                                    <div class="starratin ">
+                                        <div class="center "> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true
+                                        "></i> <i class="fa fa-star-o " aria-hidden="true "></i>                                            </div>
+                                    </div>
+                                    <div class="product_price ">
+                                        <p><span class="old_price ">$24.99</span><span class="new_price "> $12.49</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 margin_bottom_30_all ">
+                            <div class="product_list ">
+                                <div class="product_img "> <img class="img-responsive " src="../images/Products/shirts/louis-philippe.jpg " alt=" " style="height: -12% "> </div>
+                                <div class="product_detail_btm ">
+                                    <div class="center ">
+                                        <h4><a href="# ">louis-Philipse</a></h4>
+                                    </div>
+                                    <div class="starratin ">
+                                        <div class="center "> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true
+                                        "></i> <i class="fa fa-star-o " aria-hidden="true "></i>                                            </div>
+                                    </div>
+                                    <div class="product_price ">
+                                        <p><span class="old_price ">$45.00</span> – <span class="new_price ">$65.00</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 margin_bottom_30_all ">
+                            <div class="product_list ">
+                                <div class="product_img "> <img class="img-responsive " src="../images/Products/shirts/van-heusen.jpg " alt=" " style="height: -12% "> </div>
+                                <div class="product_detail_btm ">
+                                    <div class="center ">
+                                        <h4><a href="# ">van-heusen</a></h4>
+                                    </div>
+                                    <div class="starratin ">
+                                        <div class="center "> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true "></i> <i class="fa fa-star " aria-hidden="true
+                                        "></i> <i class="fa fa-star-o " aria-hidden="true "></i>                                            </div>
+                                    </div>
+                                    <div class="product_price ">
+                                        <p><span class="old_price ">$35</span> – <span class="new_price ">$45.50</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <!--
+    <footer class="footer-distributed ">
+
+        <div class="footer-left ">
+
+            <img src="../images/myshoplogo.png " alt="logo ">
+
+            <p class="footer-links ">
+                <a href="index.html " class="link-1 ">Home</a>
+
+
+                <a href="html/Products.html ">Pricing</a>
+
+                <a href="html/About.html ">About</a>
+
+                <a href="html/Contact.html ">Faq</a>
+
+                <a href="html/Contact.html ">Contact</a>
+            </p>
+
+            <p class="footer-company-name ">One Tap ©2020</p>
+        </div>
+
+        <div class="footer-center ">
+
+            <div>
+                <i class="fa fa-map-marker "></i>
+                <p><span>Uka Tarsadiya University</span>Bardoli, Gujrat</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone "></i>
+                <p>+91 7069384384</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope "></i>
+                <p><a href="mailto:jaygangani1212@gmail.com ">onetap@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right ">
+
+            <p class="footer-company-about ">
+                <span>About the company</span> In here at one tap, we all computer engineers decided to make your life easier in buying things. For making your life ease you can buy anything by just one tap. Our main motto is to make your life easy going
+                while buying anything.
+            </p>
+
+            <div class="footer-icons ">
+
+                <a href="https://www.facebook.com "><i class="fa fa-facebook "></i></a>
+                <a href="https://www.twitter.com "><i class="fa fa-twitter "></i></a>
+                <a href="https://www.instagram.com "><i class="fa fa-instagram "></i></a>
+                <a href="https://www.github.com "><i class="fa fa-github "></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+-->
+</body>
+
+</html>
