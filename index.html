@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Myshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="images/bagicon.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <span class="navbar-toggle" id="navbar-toggle-js">
+            <i class="material-icons responav" id="responav">toc</i> 
+        </span>
+        <a href="html/onetape.html" class="logo"><img id="logoimg" src="images/myshoplogo.png" alt="logo"></a>
+        <div class="searchBox">
+            <input class="searchInput" type="text" name="" placeholder="Search">
+            <button class="searchButton" href="https://google.com/search">
+              <i class="material-icons">
+                  search
+              </i>
+          </button>
+        </div>
+        <ul class="main-nav" id="menu-js">
+            <li>
+
+            </li>
+            <li><a class="navoptions activemenu" href="index.html">Home</a></li>
+            <li><a class="navoptions" href="html/Products.html">Products</a></li>
+            <li><a class="navoptions" href="html/Contact.html">Contact</a></li>
+            <li><a class="navoptions" href="html/About.html">About Us</a></li>
+            <li><a class="navoptions" href="html/Login.html"><i class="material-icons loginicon">account_circle</i>
+        </a></li>
+            </div>
+        </ul>
+        <script>
+            let mainNav = document.getElementById('menu-js');
+            let navBarToggle = document.getElementById('navbar-toggle-js');
+
+            navBarToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+            });
+        </script>
+    </nav>
+
+
+    <div class="poster">
+        <div class="poster-row">
+            <div class="col-2">
+                <h1>Make your life Easy <br> With <span> One tap</span></h1>
+                <p>We Provide best value for your money and time <br> so All things at One Tap</p>
+                <a href="#offers" id="explore">Explore</a>
+            </div>
+            <div class="col-2">
+                <img src="images/posterimg.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="slideshow-container" id="offers">
+        <div class="mySlides fade">
+            <a href="html/Products.html#realme7"> <img class="slideshowimg" src="images/slideshow/ss1.jpg" style="width:100%"></a>
+        </div>
+
+        <div class="mySlides fade">
+            <img class="slideshowimg" src="images/slideshow/ss2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img class="slideshowimg" src="images/slideshow/ss3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img class="slideshowimg" src="images/slideshow/ss4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img class="slideshowimg" src="images/slideshow/ss5.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img class="slideshowimg" src="images/slideshow/ss6.jpg" style="width:100%">
+        </div>
+
+    </div>
+    <div class="dotclass" style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" activedot", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " activedot";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+
+    <h3 class="title">Deals of the day</h3>
+    <div class="products">
+        <div class="flex-products">
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/headphons/philips.jpg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/headphons/panasonic.jpg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/headphons/skull.jpg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/headphons/sony.jpg" alt="Earbuds"></a>
+            </div>
+        </div>
+    </div>
+    <h3 class="title">Men Style</h3>
+    <div class="products">
+        <div class="flex-products">
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/menscloth/t-shirts449.jpg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/menscloth/t-shirts499.jpg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/menscloth/t-shirts695.jpg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/menscloth/t-shirts999.jpg" alt="Earbuds"></a>
+            </div>
+        </div>
+    </div>
+    <h3 class="title">Television</h3>
+    <div class="products">
+        <div class="flex-products">
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/tv/soni64000.webp" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/tv/soni71241.webp"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/tv/onrpluse69899.webp" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/tv/mitv.webp" alt="Earbuds"></a>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="title">Fridge</h3>
+    <div class="products">
+        <div class="flex-products">
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/fridge/haier.jpeg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/fridge/lg.jpeg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/fridge/samsung.jpeg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/fridge/whirpool.jpeg" alt="Earbuds"></a>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="title">Female clothing</h3>
+    <div class="products">
+        <div class="flex-products">
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/femalecloth/kurta350.jpg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/femalecloth/kurta499.jpg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/femalecloth/kurta650.jpg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/femalecloth/saree1999.jpg" alt="Earbuds"></a>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="title">laptops</h3>
+    <div class="products">
+        <div class="flex-products">
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/laptops/asus.jpg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/laptops/avita.jpg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/laptops/hp.jpg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/laptops/lenovo.jpg" alt="Earbuds"></a>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="title">shoes</h3>
+    <div class="products">
+        <div class="flex-products">
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/shoes/bata office.jpg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/shoes/bata.jpg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/shoes/hrx.jpg" alt="Earbuds"></a>
+            </div>
+            <div class="card">
+                <a href="../WT New/html/Products.html"><img src="images/Products/shoes/puma.jpg" alt="Earbuds"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <br/>
+
+    <h1 class="teamheading">Meet the team</h1>
+    <div class="team">
+        <div class="imgcard">
+            <a href="http://www.instagram.com/jeetramoliya" target="_blank"><img src="images/we/jeet.jpg" alt=""></a>
+            <h2>Jeet Ramoliya</h2>
+            <p>Student at <br>Uka Tarsadiya University</p>
+        </div>
+        <div class="imgcard">
+            <a href="http://www.instagram.com/jay83._" target="_blank"><img src="images/we/Jay.jpeg" alt=""></a>
+            <h2>Jay Gangani</h2>
+            <p>Student at <br>Uka Tarsadiya University</p>
+        </div>
+        <div class="imgcard">
+            <a href="http://www.instagram.com/its_kishan__" target="_blank"><img src="images/we/kishan.JPG" alt=""></a>
+            <h2>Kishan Patel</h2>
+            <p>Student at <br>Uka Tarsadiya University</p>
+        </div>
+        <div class="imgcard">
+            <a href="http://www.instagram.com/__i.vandan__" target="_blank"><img src="images/we/Vandan.jpg" alt=""></a>
+            <h2>Vandan Prajapati</h2>
+            <p>Student at <br>Uka Tarsadiya University</p>
+        </div>
+    </div>
+
+    <div class="asklogin">
+        <h4>See personalized recommendations</h4>
+        <button onclick="location='html/login.html'">Login</button>
+    </div>
+    <br/>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <img src="images/myshoplogo.png" alt="logo">
+
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Home</a>
+
+
+                <a href="html/Products.html">Pricing</a>
+
+                <a href="html/About.html">About</a>
+
+                <a href="html/Contact.html">Faq</a>
+
+                <a href="html/Contact.html">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2020 One tape All rights reserved.</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Uka Tarsadiya University</span>Bardoli, Gujrat</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 1234567890</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:jeetramoliya10@gmail.com">onetap@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span> In here at one tap, we all computer engineers decided to make your life easier in buying things. For making your life ease you can buy anything by just one tap. Our main motto is to make your life easy going
+                while buying anything.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.github.com"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
